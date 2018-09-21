@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html>
+<meta name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,shrink-to-fit=no' />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<link rel="stylesheet" type="text/css" href="./icomoon/style.css">
+<style>
+html, body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #000000;
+    _background:url(about:blank);
+    height:100%; 
+    font-size:16px;
+    line-height: 25.888px;
+    box-sizing: content-box;
+}   
+
+a {
+    font-size: .95em;
+    text-decoration: none;
+    color: #5f90b0
+}
+
+a:hover {
+    color: #406882
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans Pro",sans-serif
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 500;
+    line-height: 1.618em;
+}
+h1 {
+    font-size: 6.85em;
+}
+h2 {
+    font-size: 4.234em;
+}
+h3 {
+    font-size: 2.617em;
+}
+h4 {
+    font-size: 1.618em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+    font-size: .8em;
+}
+hr {
+    border: 0.5px solid #2E2E2E;
+}
+ol, ul {
+    list-style: none;
+}
+.pages {
+    position: fixed;
+    z-index: 999;
+    width: 22px;
+    height: 312px;
+    
+    right: 22px;
+    top:calc((100% - 312px) /2);
+
+}
+@media only screen and (max-width: 415px) {
+    .pages {
+        display: none;
+    }
+}
+.pages ul{
+    margin: 0px;
+    padding: 0px;
+}
+.pages ul li {
+    margin:10px 0px 0px 0px;
+    height: 22px;
+    width: 22px;
+    border: 0.5px solid #2f2f2f;
+}
+.pages ul li.curr {
+    background-color:  #2f2f2f;
+}
+.screen {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.screen > div:nth-child(1) {
+    margin: auto;
+    top: 19.1%;
+    width: 100%;
+    height: 61.8%;
+    position: relative;
+
+}
+
+
+@media only screen and (min-width: 769px) {
+  .screen > div:nth-child(1) {
+    margin: auto;
+    top: 19.1%;
+    width: 61.8%;
+    height: 61.8%;
+    position: relative;
+    border-left: 0px solid #999999;
+    
+    }
+  
+}
+.screen > div:nth-child(2) {
+    top: 22px;
+    left:22px;
+    width: 30px;
+    height: 128px;
+    font-size: 0.8em;
+    line-height: 1.618em;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    border-right: 0.5px solid #999999;
+    
+}
+
+.r1 {
+    text-align: center;
+}
+.r1 .content {
+    position:relative;
+    width:calc(1.618em * 5 );
+    height:calc(1.618em * 5);
+    background-color: #cccccc;
+    border-radius: 100%;
+    margin: auto;
+}
+.r1 .content>svg{
+    width:61.8%;
+    height:61.8%;
+    position:relative;
+    top:19.1%;
+    text-align: center;
+}
+.r1 h1{
+    font-size: 83.333px;
+}
+.next {
+    position:relative;
+    width: 100%;
+    height: 56px;
+    bottom: 0px;
+}
+@keyframes dida {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0.5,0.1);
+  }
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0px, 36px, 0);
+  }
+}
+.next > svg {
+    display: inline-block;
+  animation-name: dida;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  height:30px;width:20px;
+
+}
+/*
+.page{
+    color: #cccccc;
+    font-size: 1.618em;
+    font-weight: 100;
+    position:absolute;
+    width: 100%;
+    height: 30px;
+    bottom: 0px;
+    right: 0px;
+    text-align: right;
+}
+*/
+
+.r2 {
+    text-align: center;
+    vertical-align: top;
+    margin:0 auto;
+    padding: 0px;
+    overflow: hidden;
+    color: #aaaaaa;
+    font-size:0.8em;
+}
+.r2 >div>div:nth-child(1){
+    margin:0 auto;
+    padding: 0px;
+    overflow: hidden;
+    border: 0px;
+    display: inline-block;
+    height: 100%;
+    width: 33%;
+    
+}
+.r2 >div>div:nth-child(2){
+    margin:0 auto;
+    padding: 0px;
+    overflow: hidden;
+    border: 0px;
+    display: inline-block;
+    height: 100%;
+    width: 66%;
+    border-left:0px solid #2E2E2E;
+}
+@media only screen and (max-width: 769px) {
+    .r2 >div>div:nth-child(1){
+     display: none;
+    }
+    .r2 >div>div:nth-child(2){
+    margin:0 auto;
+    padding: 0px;
+    overflow: hidden;
+    border: 0px;
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-left:0px solid #2E2E2E;
+    } 
+}
+
+.aboutme {
+    margin: auto;
+    height: 61.8%;
+    width: calc(100% - 32px);
+    padding: 15px;
+    position: relative;
+    top: calc((100% - 61.8%)/3);
+    /*top: 0;*/
+    border:0px solid #2E2E2E;
+    text-align: left;
+}
+.aboutme>div span{
+    display: inline-block;
+    width: 24%;
+    font-size: 1em;
+}
+@media only screen and (max-width: 376px) {
+    .aboutme>div span{
+        display: inline-block;
+        width: 20%;
+        height: 1.618em;
+        overflow: hidden;
+    }
+}
+
+.aboutme>div:nth-child(1)>span:nth-child(1){
+    font-size: 2.5em;
+    line-height: 1.618em;
+    width: 28%;
+}
+.aboutme>div:nth-child(1)>span:nth-child(2){
+    font-size: 1.2em;
+    width: 70%;
+}
+.aboutme>div span:nth-child(1){
+    text-align: right;
+}
+.aboutme>div span:nth-child(3){
+    text-align: right;
+    
+}
+.aboutme>div span:nth-child(2){
+    text-indent:1em;
+}
+.aboutme>div span:nth-child(4){
+    text-indent:1em;
+}
+.aboutme>div:nth-child(9)>span:nth-child(1) {
+    text-align: left;
+    width: 100%;
+    height: 80px;
+}
+.r2 >div>div:nth-child(1)>div:nth-child(1) {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.r2 >div>div:nth-child(1)>div:nth-child(1)>div:nth-child(1){
+    margin:auto;
+    width:160px;height:160px;border-radius:20%;overflow:hidden;
+    position: relative;
+    top: calc((100% - 160px)/2);
+}
+.r2 >div>div:nth-child(1)>div:nth-child(1)>div:nth-child(2){
+    margin:auto;
+    width:200px;height:200px;overflow:hidden;
+    position: absolute;
+    top: calc((100% - 200px)/2);
+    left: calc((100% - 200px)/2);
+    border:0.5px solid #2E2E2E;
+
+    -ms-transform:rotate(45deg);    /* IE 9 */
+    -moz-transform:rotate(45deg);   /* Firefox */
+    -webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+    -o-transform:rotate(45deg);     /* Opera */
+    transform:rotate(45deg);
+}
+
+
+.skills {
+    position: relative;
+    height: 50%;
+    width: 100%;
+
+    /*top:calc((100% - 100px)/2);*/
+    font-size: 12px;
+    line-height: 14px;
+    text-align: left;
+    word-wrap:normal;
+    color: #ffffff;
+}
+.skills span {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 100%;
+    color: #aaaaaa;
+    border: 1px solid #2E2E2E;
+}
+.skills span:hover {
+    color: green;
+    border: 1px solid green;
+}
+.profile-section {
+
+}
+.profile-section .title {
+    font-size: 2em;
+    font-weight: normal;
+    line-height: 1.618em;
+    color: #ffffff;
+    padding: 30px 35px 0;
+    
+}
+
+.profile-section>ul>li {
+    overflow: hidden;
+    padding: 30px 35px;
+
+}
+.profile-section .logo {
+    float: right;
+    width: 100px;
+    text-align: center;
+}
+.profile-section .logo img {
+    width: 100%;
+}
+.profile-section .item-title {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+.profile-section .item-subtitle {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 16px;
+    color: #434649;
+}
+.profile-section .meta {
+    font-size: 12px;
+    line-height: 14px;
+    color: #66696a;
+}
+.profile-section .description {
+    font-size: 13px;
+    line-height: 17px;
+    color: #666666;
+    font-weight: normal;
+    margin-top: 15px;
+}
+.thk {
+    color: #ffffff;
+    text-align: center;
+
+}
+.thk h1 {
+    margin: auto;
+    position: relative;
+    width: 460px;
+}
+@media only screen and (max-width: 415px) {
+    .thk h1 {
+        transform:scale(0.5, 0.5);
+        -ms-transform:scale(0.5, 0.5);  /* IE 9 */
+        -moz-transform:scale(0.5, 0.5);     /* Firefox */
+        -webkit-transform:scale(0.5, 0.5); /* Safari 和 Chrome */
+        -o-transform:scale(0.5, 0.5);   /* Opera */
+    }
+}
+.thk h1>span:nth-child(1){
+    font-size: 1.618em;
+}
+.thk h1>span:nth-child(2){
+    font-size: 1em;
+}
+.thk h1>span:nth-child(3){
+    font-size: 0.382em;
+    right: 0px;
+    top: -1em;
+    display: inline-block;
+    position: absolute;
+}
+.thk > div:nth-child(1) > div:nth-child(2) > span{
+    color:#FC1E70;
+}
+.thk > div:nth-child(1) >div:nth-child(3) {
+    margin: auto;
+    padding-top: 30px;
+    width: 310px;
+    height: 180px;
+    overflow: hidden;;
+}
+.thk > div:nth-child(1) >div:nth-child(3) div {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+.ace-social a {
+    text-decoration: none;
+}
+
+.ace-social a:hover {
+    opacity: 0.7;
+}
+
+.ace-social .ace-icon {
+    font-size: 23px;
+}
+
+.clear-list {
+    margin: 0;
+    padding: 2px;
+    list-style: none;
+}
+
+</style>
+<title>简历</title>
+<body style='margin:0; padding:0; -webkit-touch-callout:none;-webkit-tap-highlight-color:rgba(0,0,0,0);'>
+    <div class="pages">
+        <ul id="page">
+            <li touchAction="s0" class="curr"></li>
+            <li touchAction="s1"></li>
+            <li touchAction="s2"></li>
+            <li touchAction="s3"></li>
+            <li touchAction="s4"></li>
+            <li touchAction="s5"></li>
+        <ul>
+    </div>
+    <div class="screen r1">
+        <div>
+            <br/>
+            <div class="content"><svg t="1514863000444" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5469" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256"><defs><style type="text/css"></style></defs><path d="M235.613 144.873h552.336c44.055 0 83.507 17.754 112.659 46.466 28.606 28.99 46.32 68.791 46.469 112.727l-0.002 416.374c0 43.179-18.411 83.289-46.687 111.563l-2.191 2.191c-28.551 27.731-67.538 44.854-110.524 44.933l-552.061-0.001c-43.922-0.113-83.603-18.175-112.113-47.237l-0.546 0.113c-28.391-28.739-45.951-68.233-46.029-111.827l0.001-416.617c0-43.617 17.754-83.069 46.466-112.001l1.095-0.658c28.494-28.494 67.726-46.028 111.124-46.028z m331.62 167.892L419.067 696.77c-0.819 2.097-1.294 4.526-1.294 7.065 0 8.404 5.2 15.596 12.557 18.532a19.711 19.711 0 0 0 7.516 1.481c8.417 0 15.603-5.273 18.436-12.695l148.212-383.92c0.996-2.252 1.577-4.877 1.577-7.639 0-8.391-5.358-15.531-12.838-18.183a19.825 19.825 0 0 0-7.516-1.474c-8.417 0-15.603 5.273-18.436 12.695z m-165.92 87.672l-188.057 93.371c-6.578 3.411-10.997 10.171-10.997 17.961 0 3.366 0.825 6.539 2.283 9.329a18.444 18.444 0 0 0 10.657 9.686l186.114 92.78c9.863 5.26 21.918 1.315 27.178-8.548 4.604-9.863 0.876-22.356-9.425-26.96l-152.112-76.275 152.112-75.837c6.788-3.403 11.364-10.307 11.364-18.279 0-3.152-0.716-6.138-1.993-8.801-3.243-6.438-9.92-10.861-17.63-10.861-3.483 0-6.755 0.903-9.595 2.487z m203.182 35.508l152.549 75.837-152.549 76.275c-6.495 3.379-10.852 10.057-10.852 17.754 0 11.018 8.931 19.949 19.949 19.949 3.321 0 6.451-0.813 9.206-2.246l187.29-93.538c4.695-2.348 8.259-6.375 9.946-11.276 0.327-0.323 1.079-3.398 1.079-6.649 0-7.877-4.42-14.721-10.915-18.188l-187.51-93.425c-2.741-1.533-6.012-2.436-9.495-2.436-7.711 0-14.386 4.423-17.632 10.87a20.099 20.099 0 0 0-2.149 9.068c0 7.824 4.457 14.608 10.971 17.951z m183.454-224.662H235.613c-25.449 0.197-48.398 10.738-64.878 27.621l-0.219-0.224c-16.391 16.548-26.522 39.325-26.522 64.468l0.001 0.43v416.86c0 24.987 9.863 47.782 26.522 64.659h0.438c16.605 16.713 39.574 27.087 64.966 27.181l552.029-0.001c24.788-0.038 47.284-9.824 63.867-25.725l1.23-1.453c16.541-16.79 26.804-39.803 26.964-65.213l-0.004-416.327c-0.368-50.738-41.34-91.785-92.013-92.275z" fill="" p-id="5470"></path></svg></div>
+            <br/>
+            <h2 >&nbsp;</h2>
+            <h4 style="color:#aaaaaa;">丁亚坤</h4>
+            <h4 style="color:#ffffff;">应聘Python开发工程师工作</h4>
+            <div class="next" touchAction="next">
+                <svg touchAction="next" t="1514873034709" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4434" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128"><defs><style type="text/css"></style></defs><path id="svg_1" d="m75.909,531.342l825.666,0l-323.375,323.356c-7.471,7.471 -7.358,19.361 0.037,26.776c7.452,7.452 19.456,7.377 26.889,-0.076l353.242,-353.451c5.158,-3.394 8.742,-8.951 8.742,-15.568c0,-4.722 -1.896,-8.875 -4.722,-12.193l0.171,-0.228l-0.986,-0.986c-0.019,-0.019 -0.038,-0.038 -0.057,-0.057l-356.428,-356.428c-7.301,-7.301 -19.418,-7.415 -26.833,-0.019c-7.452,7.452 -7.433,19.399 -0.037,26.776l324.153,324.172l-826.464,0c-10.581,0 -19.02,8.495 -19.02,18.963c0,10.543 8.514,18.963 19.02,18.963l0.002,0z" fill="white" transform="rotate(90, 511.9984741210938,511.9957885742187) "/></svg>
+            </div>
+            <div></div>
+
+        </div>
+        <div>
+            我<br/>的<br/>简<br/>历
+        </div>
+    </div>
+    
+    <div class="screen r2">
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <img width="100%" height="100%" src="img/avatar.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="aboutme">
+                    <div><span>丁亚坤</span><span>立志成为一名全栈攻城狮~</span></div>
+                    <div><span>&nbsp;</span></div>
+                    <div>
+                        <span>性别 </span><span>男</span>
+                        <span>学校 </span><span>上海大学</span>
+                    </div>
+                    <div>
+                        <span>学历 </span><span>本科</span>
+                        <span>现居 </span><span>上海</span>
+                    </div>
+                    <div>
+                        <span>&nbsp;</span>
+                    </div>
+                    <div>
+                        <ul class="ace-social clear-list">
+                            <span><a href="https://www.github.com/mtianyan" target="_blank"><span class="ace-icon ace-icon-github"></span></a></span><span>Github</span>
+                            <span><a href="http://blog.mtianyan.com" target="_blank"><span class="ace-icon ace-icon-blog"></span></a></span><span>博客</span>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="ace-social clear-list">
+                            <span><a title="+86 13262667179"><span class="ace-icon ace-icon-phone"></span></a></span><span>132 6266 7179</span>
+                            <span><a href="mailto: yahkun@foxmail.com"><span class="ace-icon ace-icon-contact"></span></a></span><span>电子邮箱</span>
+                        </ul>
+                    </div>
+                    <div>
+                        <span>&nbsp;</span>
+                    </div>
+                    <div>
+                        <span>性格温和，有责任心，工作踏实，爱好广泛，学习能力强，喜欢安静，爱好黑科技。两年Python开发、使用经验，独立设计、编写、部署了三个web项目，一个爬虫搜索项目。</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>基<br/>本<br/>信<br/>息 </div>
+    </div>
+
+<div class="screen" >
+    <div id="jz">
+        <div class="skills" >
+            <div id="jzcontent">
+                <div>
+                    <span>后端：</span>
+                    <span>Python2/3</span>
+                    <span>Golang(努力学习中ing...)</span>
+                    <span>MVC</span>
+                    <span>OOP</span>
+<!--                     <span>AOP</span>
+                    <span>SOA</span> -->
+                </div>
+                <div>
+                    <span>框架：</span>
+                    <span>Django</span>
+                    <span>Flask</span>
+                    <span>RestFramework</span>
+                    <span>SQLAlchemy</span>
+                    <span>jinjia2</span>
+                    <span>xadmin</span>
+                    <span>scrapy</span>
+                    <span>celery</span>
+                    <span>sentry</span>
+                </div>
+                <div>
+                    <span>数据库：</span>
+                    <span>MariaDB/MySQL</span>
+                    <span>MongoDB</span>
+                    <span>Redis</span>
+                </div>
+                <div>
+                    <span>前端：</span>
+                    <span>HTML5/CSS3</span>
+                    <span>JavaScript</span>
+                    <span>jQuery</span>
+                    <span>vue.js</span>
+                    <span>Boostrap</span>
+                </div>
+                <div>
+                    <span>工具：</span>
+                    <span>Linux</span>
+                    <span>VIM</span>
+                    <span>PyCharm</span>
+                    <span>Git</span>
+                </div>
+            </div>
+        </div>
+        <canvas id="q" ></canvas>
+
+    </div>
+    <div>技<br/>术<br/>专<br/>长 </div>
+</div>
+<div class="screen"><div>
+    <section class="profile-section">
+            <ul class="positions">
+                <li class="position" >
+                    <header>
+                        <h5 class="logo"><a href="http://www.daishushu.cn/" target="blank"><img src="img/daishushu.jpg"></a>
+                        </h5>
+                        <h4 class="item-title">袋鼠二手书</h4>
+                        <h5 class="item-subtitle"><a href="http://www.daishushu.cn/" target="blank">主站</a> | <a href="http://vueshop.mtianyan.cn/index">API</a> | <a href="https://github.com/mtianyan/VueDjangoFrameWorkShop" target="blank">项目源码@Github</a></h5>
+                    </header>
+                    <div class="meta"><span class="date-range"></span></div>
+                    <p class="description" >
+                        •   使用Python与Django以及前端vue开发的前后端分离的网站<br />
+                        •   Django-rest-framework实现 RESTful API。<br />
+                        •   项目支持支付宝支付, 支持手机短信验证码注册，支持第三方登录。<br />
+                        •   集成了sentry错误监控系统。<br />
+                    </p>
+                </li>
+                <li class="position" >
+                    <header>
+                        <h5 class="logo"><a href=" http://mxonline.mtianyan.cn" target="blank"><img  src="img/mxonline.jpg"></a>
+                        </h5>
+                        <h4 class="item-title">在线教育平台 - 慕学在线</h4>
+                        <h5 class="item-subtitle"><a href=" http://mxonline.mtianyan.cn" target="blank">项目Demo</a> | <a href="https://github.com/mtianyan/Mxonline3" target="blank">项目源码@Github</a></h5>
+                    </header>
+                    <div class="meta"><span class="date-range"></span></div>
+                    <p class="description" >
+                        •   完整的用户登录注册以及找回密码功能。<br />
+                        •   个人中心：修改头像，修改密码，修改邮箱，可以看到我的课程以及我的收藏，可以删除收藏，我的消息。<br />
+                        •   导航栏: 公开课，授课讲师，授课机构，全局搜索，分页，排序筛选功能。<br />
+                        •   课程新增页面上传图片，富文本的编辑。时间选择，添加章节，添加课程资源。<br />
+                        •   日志记录：记录后台人员的操作。后台管理系统可以切换主题。左侧每一个功能都有列表显示, 增删改查，筛选功能。<br />
+                    </p>
+                </li>
+                <li class="position" >
+                    <header>
+                        <h5 class="logo"><a href="http://movie.mtianyan.cn" target="blank"><img  src="img/movie.jpg"></a>
+                        </h5>
+                        <h4 class="item-title">弹幕微电影</h4>
+                        <h5 class="item-subtitle"><a href="http://movie.mtianyan.cn" target="blank">项目Demo</a> | <a href="https://github.com/mtianyan/Mxonline3" target="blank">项目源码@Github</a></h5>
+                    </header>
+                    <div class="meta"><span class="date-range"></span></div>
+                    <p class="description" >
+                        •   Python + Flask + MySQL + Nginx<br />
+                        •   werkzug + pymysql数据库驱动 + flask-sqlalchemy<br />
+                        •   wtforms表单验证 + jinjia2模板 + flask-script<br />
+                        •   视频技术：jwplayer播放器插件 + 视频限速限IP访问 + flv/mp4格式支持 + nginx点播实现<br />
+                    </p>
+                </li>
+            </ul>
+    </section>
+</div>
+<div>项<br/>目<br/>作<br/>品<br/>/<br>①</div>
+</div>
+<div class="screen"><div>
+    <section class="profile-section">
+            <ul class="positions">
+                <li class="position" >
+                    <header>
+                        <h5 class="logo"><a href="https://www.shu.edu.cn" target="blank"><img src="img/shu-logo.png"></a>
+                        </h5>
+                        <h4 class="item-title">上海大学</h4>
+                        <h5 class="item-subtitle">教育专业(本科)</h5>
+                    </header>
+                    <div class="meta"><span class="date-range"><time>2012 年</time> – <time>2017 年</time></span></div>
+                    <p class="description" >
+                        •   在校期间学习成绩优异，获得校级优秀毕业生荣誉。<br />
+                        •   CET-6 <br />
+                    </p>
+                </li>
+                <li class="position" >
+                    <header>
+                        <h5 class="logo"><a href="https://www.shuosc.org/" target="blank"><img  src="img/osc-logo.png"></a>
+                        </h5>
+                        <h4 class="item-title">上海大学开源社区</h4>
+                        <h5 class="item-subtitle">开源兴趣小组</h5>
+                    </header>
+                    <div class="meta"><span class="date-range"><time>2015年 - 至今</time></span></div>
+                    <p class="description" >
+                        •   参与开发校园网站模块-<a href="http://www.sz.shu.edu.cn/" target="blank">熟知网</a>，目前累计访问人数超过50万+<br />
+                        •   参与兴趣小组的开源项目-<a href="https://shuer.link" target="blank">上海大学导航网</a>前端vue部分-<a href="https://github.com/shuopensourcecommunity/SHUer.link">Github仓库</a><br />
+                        •   参与组织校级编程竞赛，线下社区技术知识分享活动。<br />
+                    </p>
+                </li>
+            </ul>
+    </section>
+    <!--end-->
+</div>
+<div>教<br/>育<br/>经<br/>历 </div>
+</div>
+<div class="screen thk"><div>
+    <h1><span>T</span><span>hanks</span><span>For You!</span></h1>
+    <div>感谢您花时间阅读我的简历，期待能有机会和您共事。</div>
+</div>
+    <div>致<br/>谢<br/>！<br/> </div>
+</div>
+
+<script type="text/javascript" >
+//兼容一下requestAnimationFrame
+(function() {
+    'use strict';
+
+    if (!Date.now) Date.now = function () { return new Date().getTime(); };
+    var lastTime = 0;
+    var vendors = ['webkit', 'moz'];
+    for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+        window.requestAnimationFrame = window[vendors[x] + 'RequestAnimationFrame'];
+        window.cancelAnimationFrame = window[vendors[x] + 'CancelAnimationFrame'] ||    // name has changed in Webkit
+                                      window[vendors[x] + 'CancelRequestAnimationFrame'];
+    }
+
+    if (!window.requestAnimationFrame) {
+        window.requestAnimationFrame = function(callback, element) {
+            var currTime = new Date().getTime();
+            var timeToCall = Math.max(0, 16.7 - (currTime - lastTime));
+            var id = window.setTimeout(function() {
+                callback(currTime + timeToCall);
+            }, timeToCall);
+            lastTime = currTime + timeToCall;
+            return id;
+        };
+    }
+    if (!window.cancelAnimationFrame) {
+        window.cancelAnimationFrame = function(id) {
+            clearTimeout(id);
+        };
+    }
+}());
+var step = 0;
+var str = document.getElementById("jzcontent").innerText;
+var len = str.length;
+var s = document.getElementById("jz");
+var width = q.width = s.offsetWidth;
+var height = q.height = s.offsetHeight*0.5;
+var letters = Array(256).join(1).split('');
+var draw = function () {
+    q.getContext('2d').fillStyle='rgba(0,0,0,.05)';
+    q.getContext('2d').fillRect(0,0,width,height);
+    q.getContext('2d').fillStyle='#0F0';
+    letters.map(function(y_pos, index){
+
+        if (step>=len) step = 0;
+        text = str.substr(step,1);
+        step++;
+        x_pos = index * 10;
+        q.getContext('2d').fillText(text, x_pos, y_pos);
+        letters[index] = (y_pos > 758 + Math.random() * 1e4) ? 0 : y_pos + 10;
+    });
+    requestAnimationFrame(draw);
+};
+//setInterval(draw, 33);
+requestAnimationFrame(draw);
+var add = function(element, type, callback){
+
+ if(element.addEventListener){
+  element.addEventListener(type, callback, true);
+} else if(element.attachEvent){
+  element.attachEvent('on' + type, callback);
+} else {
+  element['on' + type] = callback;
+}
+};
+function callTouchAction(el, ev) {
+  if(el.nodeType === 1){
+    var fnName = el.getAttribute("touchAction") || el.getAttribute("touchaction");
+    if (fnName!==undefined && typeof stageAction==="object") {
+      if (typeof stageAction[fnName] === 'function') {
+        stageAction[fnName](el, ev);
+      }
+    }
+  }
+}
+var addClass = function( elem, c ) {
+    if (typeof elem !== 'object') {
+      return;
+    };
+    if ( 'classList' in elem ) {
+      elem.classList.add( c );
+    }else{
+      if ( !hasClass( elem, c ) ) {
+        elem.className = elem.className + ' ' + c;
+      }
+    }
+};
+var removeClass = function( elem, c ) {
+    if (typeof elem !== 'object') {
+      return;
+    };
+    if ( 'classList' in elem ) {
+      elem.classList.remove( c );
+    }else{
+      elem.className = elem.className.replace( classReg( c ), ' ' );
+    }
+    
+  };
+
+var VENDOR_PREFIXES = ['', 'webkit', 'Moz', 'MS', 'ms', 'o'];
+var TEST_ELEMENT = document.createElement('div');
+function prefixed(obj, property) {
+  var prefix = void 0;
+  var prop = void 0;
+  var camelProp = property[0].toUpperCase() + property.slice(1);
+  var i = 0;
+  while (i < VENDOR_PREFIXES.length) {
+    prefix = VENDOR_PREFIXES[i];
+    prop = prefix ? prefix + camelProp : property;
+    if (prop in obj) {
+      return prop;
+    }
+    i++;
+  }
+
+  return undefined;
+}
+var MOBILE_REGEX = /mobile|tablet|ip(ad|hone|od)|android/i;
+
+var SUPPORT_MOUSE = 'onmousedown' in window;
+var SUPPORT_POINTER_EVENTS = prefixed(window, 'PointerEvent') !== undefined;
+var SUPPORT_TOUCH = 'ontouchstart' in window;
+var SUPPORT_ONLY_TOUCH = SUPPORT_TOUCH && MOBILE_REGEX.test(navigator.userAgent);
+var counter = 0;
+var currentId = "";
+var bindID = function(object) {
+  object.uniqueID =  "e" + counter ++;
+  currentId = object.uniqueID;
+};
+var isEquilTouch = function(object) {
+  if ((typeof object==="object") && (typeof object.uniqueID==="string")) {
+    if (object.uniqueID.toString()==currentId) {
+      return true;
+    };
+  };
+  return false;
+};
+
+
+var getEvent = function(event){
+  return event ? event : window.event;
+};
+var getTarget = function(event){
+  return event.target || event.srcElement;
+};
+var touchBegin = function (ev) {
+  //window.console.trace(ev);
+  var target = getTarget(ev);
+  bindID(target);
+
+  //window.console.debug(target.uniqueID);
+}
+var touchMove = function (ev) {
+    
+}
+var touchEnd = function (ev) {
+  //window.console.trace(ev);
+  var target = getTarget(ev);
+  if (isEquilTouch(target)){
+    var target = getTarget(ev);
+    //var path = ev.path?ev.path:undefined;
+    //var length = ev.targetTouches.length;
+    callTouchAction(target, ev);
+    //window.console.debug(target);
+  }
+}
+//初始Touch
+var initEvent = function() {
+  if (SUPPORT_ONLY_TOUCH) {
+    add(document, "touchstart", touchBegin);
+    add(document, "touchmove", touchMove);
+    add(document, "touchend", touchEnd);
+  }else if(SUPPORT_MOUSE) {
+    add(document, "mousedown", touchBegin);
+    add(document, "mousemove", touchMove);
+    add(document, "mouseup", touchEnd);
+  }else if(SUPPORT_POINTER_EVENTS){
+    add(document, "MSPointerDown", touchBegin);
+    add(document, "MSPointerMove", touchMove);
+    add(document, "MSPointerUp", touchEnd);
+  }
+}
+initEvent();
+var cpage = 0;
+var stageAction = {
+    "clear":function(el, ev) {
+        var p = document.documentElement.querySelector("#page");
+        var o = p.childNodes;
+        for(var i=0;i<o.length;i++){
+            var tg = o[i].tagName;
+            if (tg!=undefined && o[i].tagName.toLowerCase()=="li"){
+                removeClass(o[i], "curr");
+            }
+            
+        } 
+    },
+    "toPage":function(n) {
+        var p = document.documentElement.querySelector("#page");
+        var o = p.childNodes;
+        var oid = 0;
+        for(var i=0;i<o.length;i++){
+            var tg = o[i].tagName;
+            if (tg!=undefined && o[i].tagName.toLowerCase()=="li"){
+
+                if(oid==n) addClass(o[i], "curr");
+                oid++;
+            }
+            
+        } 
+    },
+    "next":function(el, ev) { 
+        this.clear();
+        this.toPage(1);
+        cpage=1;
+        scrollPage(cpage);
+    },
+    "s0":function(el, ev) { 
+        this.clear();
+        addClass(el, "curr");
+        cpage=0;
+        scrollPage(cpage);
+    },
+    "s1":function(el, ev) { 
+    this.clear();
+        addClass(el, "curr"); 
+        cpage=1;
+        scrollPage(cpage);
+    },
+    "s2":function(el, ev) {  
+        this.clear();
+        addClass(el, "curr");
+        cpage=2;
+        scrollPage(cpage);
+    },
+    "s3":function(el, ev) {  
+        this.clear();
+        addClass(el, "curr");
+        cpage=3;
+        scrollPage(cpage);
+    },
+    "s4":function(el, ev) {  
+        this.clear();
+        addClass(el, "curr");
+        cpage=4;
+        scrollPage(cpage);
+    },
+    "s5":function(el, ev) {  
+        this.clear();
+        addClass(el, "curr");
+        cpage=5;
+        scrollPage(cpage);
+    },
+}
+// t: current time, b: begInnIng value, c: change In value, d: duration
+var bt = 0;
+var b = 0;
+var d = 300;
+var toPos = 0;
+var wh  = 0;
+var pp = 0;
+var isMove = false;
+function ease(t, b, c, d) {
+    return c*(t/=d)*t + b;
+}
+function gt() {
+    var t = new Date();
+    return t.getTime();
+}
+function getWH(){
+    var mwh = 0;
+    if(window.innerHeight) mwh = window.innerHeight;
+    if (document.body.clientHeight) mwh = document.body.clientHeight;
+    if (document.documentElement.clientHeight) mwh = document.documentElement.clientHeight;
+    window.console.debug(window.innerHeight,document.body.clientHeight,document.documentElement.clientHeight,mwh);
+    return mwh;
+    
+}
+function gun() {
+    var toPos = pp*wh;
+    var c = (toPos - b);
+    var t = gt();
+    var n = ease(t - bt, b, c, d);
+    //window.scrollTo(0,page*wh);
+    //window.console.debug(bt,t,b,n);
+    window.scrollTo(0, n);
+    if (bt+d>=t) {
+        requestAnimationFrame(gun);
+    }else{
+        window.scrollTo(0, toPos);
+        isMove = false;
+    }
+}
+
+function scrollPage(page) {
+    isMove = true;
+    pp = page;
+    wh = getWH();
+    b = document.documentElement.scrollTop || document.body.scrollTop;
+    bt = gt();
+    requestAnimationFrame(gun);
+}
+var delayedExec = function(after, fn) {
+    var timer;
+    return function() {
+        timer && clearTimeout(timer);
+        timer = setTimeout(fn, after);
+    };
+};
+window.onscroll =  delayedExec(150, function() {
+    if (isMove) { return;};
+    var wh = getWH();
+    var cwh = wh*0.2;
+    var pos = document.documentElement.scrollTop || document.body.scrollTop;
+    window.console.debug("top.",document.documentElement.scrollTop , document.body.scrollTop);
+    var p1 = Math.floor(pos/wh);
+    if (pos>cpage*wh ) {
+        if (pos-cpage*wh>cwh) {
+
+            cpage++;
+            if (p1>cpage) cpage = p1;
+        };
+
+    }else{
+        if (cpage*wh-pos>cwh) {
+            cpage--;
+            if (p1<cpage) cpage = p1;
+        };
+    }
+    //console.log("cp:",cpage,"p1:",p1,"p2:",p2,"pos:",pos,"wh:",wh)
+
+            stageAction["clear"]();
+        stageAction["toPage"](cpage);
+        scrollPage(cpage);
+        console.log('stopped it.'+cpage);
+        
+});
+
+</script>
+</body>
+</html>
